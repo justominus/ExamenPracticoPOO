@@ -1,0 +1,221 @@
+#pragma once
+
+#include "VerEmpleado.h"
+#include "boleteria.h"
+#include "Usuarios.h"
+
+namespace proyectoZoo {
+
+	using namespace System;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+
+	/// <summary>
+	/// Resumen de MenuDueño
+	/// </summary>
+	public ref class MenuDueño : public System::Windows::Forms::Form
+	{
+	public:
+		MenuDueño(void)
+		{
+			InitializeComponent();
+			// arrancar maximizado
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
+			//
+			//TODO: agregar código de constructor aquí
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// Limpiar los recursos que se estén usando.
+		/// </summary>
+		~MenuDueño()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Panel^ panelContent;
+
+	private:
+
+
+	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip1;
+	internal:
+	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip2;
+	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip3;
+	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^ verEmpleadoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ verAnimalesToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ balanceGeneralToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ boleteriaToolStripMenuItem;
+	private: System::ComponentModel::IContainer^ components;
+	protected:
+
+	private:
+		/// <summary>
+		/// Variable del diseñador necesaria.
+		/// </summary>
+
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// Método necesario para admitir el Diseñador. No se puede modificar
+		/// el contenido de este método con el editor de código.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			this->components = (gcnew System::ComponentModel::Container());
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MenuDueño::typeid));
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->panelContent = (gcnew System::Windows::Forms::Panel());
+			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
+			this->contextMenuStrip2 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
+			this->contextMenuStrip3 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->verEmpleadoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->verAnimalesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->balanceGeneralToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->boleteriaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			this->panelContent->SuspendLayout();
+			this->menuStrip1->SuspendLayout();
+			this->SuspendLayout();
+			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(291, 172);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(332, 126);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox2->TabIndex = 3;
+			this->pictureBox2->TabStop = false;
+			// 
+			// panelContent
+			// 
+			this->panelContent->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->panelContent->Controls->Add(this->pictureBox2);
+			this->panelContent->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->panelContent->Location = System::Drawing::Point(0, 26);
+			this->panelContent->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->panelContent->Name = L"panelContent";
+			this->panelContent->Size = System::Drawing::Size(887, 481);
+			this->panelContent->TabIndex = 11;
+			// 
+			// contextMenuStrip1
+			// 
+			this->contextMenuStrip1->ImageScalingSize = System::Drawing::Size(32, 32);
+			this->contextMenuStrip1->Name = L"contextMenuStrip1";
+			this->contextMenuStrip1->Size = System::Drawing::Size(61, 4);
+			// 
+			// contextMenuStrip2
+			// 
+			this->contextMenuStrip2->ImageScalingSize = System::Drawing::Size(32, 32);
+			this->contextMenuStrip2->Name = L"contextMenuStrip2";
+			this->contextMenuStrip2->Size = System::Drawing::Size(61, 4);
+			// 
+			// contextMenuStrip3
+			// 
+			this->contextMenuStrip3->ImageScalingSize = System::Drawing::Size(32, 32);
+			this->contextMenuStrip3->Name = L"contextMenuStrip3";
+			this->contextMenuStrip3->Size = System::Drawing::Size(61, 4);
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->ImageScalingSize = System::Drawing::Size(32, 32);
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+				this->verEmpleadoToolStripMenuItem,
+					this->verAnimalesToolStripMenuItem, this->balanceGeneralToolStripMenuItem, this->boleteriaToolStripMenuItem
+			});
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Padding = System::Windows::Forms::Padding(4, 1, 0, 1);
+			this->menuStrip1->Size = System::Drawing::Size(887, 26);
+			this->menuStrip1->TabIndex = 10;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// verEmpleadoToolStripMenuItem
+			// 
+			this->verEmpleadoToolStripMenuItem->Name = L"verEmpleadoToolStripMenuItem";
+			this->verEmpleadoToolStripMenuItem->Size = System::Drawing::Size(116, 24);
+			this->verEmpleadoToolStripMenuItem->Text = L"Ver Empleado";
+			this->verEmpleadoToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuDueño::verEmpleadoToolStripMenuItem_Click);
+			// 
+			// verAnimalesToolStripMenuItem
+			// 
+			this->verAnimalesToolStripMenuItem->Name = L"verAnimalesToolStripMenuItem";
+			this->verAnimalesToolStripMenuItem->Size = System::Drawing::Size(109, 24);
+			this->verAnimalesToolStripMenuItem->Text = L"Ver Animales";
+			// 
+			// balanceGeneralToolStripMenuItem
+			// 
+			this->balanceGeneralToolStripMenuItem->Name = L"balanceGeneralToolStripMenuItem";
+			this->balanceGeneralToolStripMenuItem->Size = System::Drawing::Size(130, 24);
+			this->balanceGeneralToolStripMenuItem->Text = L"Balance General";
+			// 
+			// boleteriaToolStripMenuItem
+			// 
+			this->boleteriaToolStripMenuItem->Name = L"boleteriaToolStripMenuItem";
+			this->boleteriaToolStripMenuItem->Size = System::Drawing::Size(83, 24);
+			this->boleteriaToolStripMenuItem->Text = L"Boleteria";
+			this->boleteriaToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuDueño::boleteriaToolStripMenuItem_Click);
+			// 
+			// MenuDueño
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->ClientSize = System::Drawing::Size(887, 507);
+			this->Controls->Add(this->panelContent);
+			this->Controls->Add(this->menuStrip1);
+			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Name = L"MenuDueño";
+			this->Text = L"MenuDueño";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			this->panelContent->ResumeLayout(false);
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
+		}
+#pragma endregion
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	// Abrir formulario VerEmpleado como diálogo
+	proyectoZoo::VerEmpleado^ ver = gcnew proyectoZoo::VerEmpleado();
+	ver->ShowDialog();
+}
+private: System::Void verEmpleadoToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	// Mostrar Usuarios embebido dentro del panelContent
+	// Limpiar contenido previo
+	this->panelContent->Controls->Clear();
+	proyectoZoo::Usuarios^ ver = gcnew proyectoZoo::Usuarios();
+	ver->TopLevel = false;
+	ver->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+	ver->Dock = System::Windows::Forms::DockStyle::Fill;
+	this->panelContent->Controls->Add(ver);
+	ver->Show();
+}
+private: System::Void boleteriaToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	// abrir boleteria embebida
+	this->panelContent->Controls->Clear();
+	proyectoZoo::MyForm^ b = gcnew proyectoZoo::MyForm();
+	b->TopLevel = false;
+	b->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+	b->Dock = System::Windows::Forms::DockStyle::Fill;
+	this->panelContent->Controls->Add(b);
+	b->Show();
+}
+};
+}

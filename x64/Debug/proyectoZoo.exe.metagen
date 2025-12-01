@@ -1,0 +1,90 @@
+  proyectoZoo.AgregarUsuarios.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.EliminarUsuario.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.Login.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.main.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.MenuAdmin.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.MenuDueño.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.boleteria.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.Usuarios.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.VerEmpleado.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly proyectoZoo, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class proyectoZoo.AgregarUsuarios: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.Animales: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.BalanceGeneral: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.EliminarUsuario: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.VerEmpleado: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.UIStyles: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Color WindowBack : Public, Static, InitOnly
+    System.Drawing.Color FormTextColor : Public, Static, InitOnly
+    System.Drawing.Color PanelBack : Public, Static, InitOnly
+    System.Drawing.Color PanelTextColor : Public, Static, InitOnly
+    System.Drawing.Color TextBoxBorder : Public, Static, InitOnly
+    System.Drawing.Color ButtonColor : Public, Static, InitOnly
+    System.Drawing.Color ButtonTextColor : Public, Static, InitOnly
+    System.Drawing.Color MenuActive : Public, Static, InitOnly
+  Methods:
+    ApplyGlobalStyles(Form): PrivateScope, Public, Static, HideBySig
+Class proyectoZoo.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.Usuario: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Nombre : Public
+    System.String Cedula : Public
+    System.String Correo : Public
+    System.String Edad : Public
+    System.String UsuarioName : Public
+    System.String Clave : Public
+    System.String Cargo : Public
+  Methods:
+    GetAllUsers(): PrivateScope, Public, Static, HideBySig
+    ValidateCredentials(String, String): PrivateScope, Public, Static, HideBySig
+Class proyectoZoo.Usuarios: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.MenuDueño: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.MenuAdmin: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.MenuCajero: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.Login: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.main: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.MyForm1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
