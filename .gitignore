@@ -1,0 +1,42 @@
+# Build directories
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Visual Studio files
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+.vs/
+
+# Compiled files
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.exe
+*.dll
+
+# Data files (runtime generated)
+data/*.dat
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE specific
+.idea/
+*.ncb
+
+# Windows thumbnail cache
+Thumbs.db
