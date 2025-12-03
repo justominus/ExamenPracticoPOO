@@ -1,7 +1,3 @@
-﻿  Animales.cpp
-  BalanceGeneral.cpp
-  Login.cpp
-  main.cpp
-  Generando código...
+﻿  MenuDueño.cpp
   AgregarUsuarios.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   proyectoZoo.vcxproj -> C:\Users\Alex\source\repos\POOExamenFinal\x64\Debug\proyectoZoo.exe

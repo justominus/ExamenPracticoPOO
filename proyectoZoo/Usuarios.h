@@ -113,12 +113,12 @@ namespace proyectoZoo {
 			// 
 			// textBox1
 			// 
-			this->textBox1->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->textBox1->BackColor = System::Drawing::SystemColors::Control;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->ForeColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox1->Location = System::Drawing::Point(222, 137);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->textBox1->Location = System::Drawing::Point(54, 142);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(401, 34);
 			this->textBox1->TabIndex = 2;
@@ -127,12 +127,12 @@ namespace proyectoZoo {
 			// 
 			// textBox2
 			// 
-			this->textBox2->BackColor = System::Drawing::SystemColors::InactiveCaptionText;
+			this->textBox2->BackColor = System::Drawing::SystemColors::Control;
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->ForeColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox2->Location = System::Drawing::Point(222, 188);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox2->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->textBox2->Location = System::Drawing::Point(54, 193);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(401, 34);
 			this->textBox2->TabIndex = 3;
@@ -140,12 +140,12 @@ namespace proyectoZoo {
 			// 
 			// textBox3
 			// 
-			this->textBox3->BackColor = System::Drawing::SystemColors::InactiveCaptionText;
+			this->textBox3->BackColor = System::Drawing::SystemColors::Control;
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox3->ForeColor = System::Drawing::SystemColors::Window;
-			this->textBox3->Location = System::Drawing::Point(222, 241);
-			this->textBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox3->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->textBox3->Location = System::Drawing::Point(54, 246);
+			this->textBox3->Margin = System::Windows::Forms::Padding(2);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(401, 34);
 			this->textBox3->TabIndex = 4;
@@ -153,12 +153,12 @@ namespace proyectoZoo {
 			// 
 			// textBox4
 			// 
-			this->textBox4->BackColor = System::Drawing::SystemColors::InactiveCaptionText;
+			this->textBox4->BackColor = System::Drawing::SystemColors::Control;
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox4->ForeColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox4->Location = System::Drawing::Point(665, 137);
-			this->textBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox4->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->textBox4->Location = System::Drawing::Point(497, 142);
+			this->textBox4->Margin = System::Windows::Forms::Padding(2);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(433, 34);
 			this->textBox4->TabIndex = 5;
@@ -166,12 +166,12 @@ namespace proyectoZoo {
 			// 
 			// textBox5
 			// 
-			this->textBox5->BackColor = System::Drawing::SystemColors::InactiveCaptionText;
+			this->textBox5->BackColor = System::Drawing::SystemColors::Control;
 			this->textBox5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox5->ForeColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox5->Location = System::Drawing::Point(665, 188);
-			this->textBox5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox5->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->textBox5->Location = System::Drawing::Point(497, 193);
+			this->textBox5->Margin = System::Windows::Forms::Padding(2);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(433, 34);
 			this->textBox5->TabIndex = 6;
@@ -179,12 +179,12 @@ namespace proyectoZoo {
 			// 
 			// textBox6
 			// 
-			this->textBox6->BackColor = System::Drawing::SystemColors::InactiveCaptionText;
+			this->textBox6->BackColor = System::Drawing::SystemColors::Control;
 			this->textBox6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox6->ForeColor = System::Drawing::SystemColors::InactiveBorder;
-			this->textBox6->Location = System::Drawing::Point(665, 241);
-			this->textBox6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox6->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->textBox6->Location = System::Drawing::Point(497, 246);
+			this->textBox6->Margin = System::Windows::Forms::Padding(2);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(433, 34);
 			this->textBox6->TabIndex = 7;
@@ -192,13 +192,13 @@ namespace proyectoZoo {
 			// 
 			// comboBox1
 			// 
-			this->comboBox1->BackColor = System::Drawing::SystemColors::InactiveCaptionText;
+			this->comboBox1->BackColor = System::Drawing::SystemColors::Control;
 			this->comboBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.875F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->comboBox1->ForeColor = System::Drawing::SystemColors::InactiveBorder;
+			this->comboBox1->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(222, 290);
-			this->comboBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->comboBox1->Location = System::Drawing::Point(54, 295);
+			this->comboBox1->Margin = System::Windows::Forms::Padding(2);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(401, 37);
 			this->comboBox1->TabIndex = 9;
@@ -207,11 +207,11 @@ namespace proyectoZoo {
 			// button2
 			// 
 			this->button2->BackColor = System::Drawing::Color::DarkCyan;
-			this->button2->ForeColor = System::Drawing::Color::PaleGreen;
-			this->button2->Location = System::Drawing::Point(665, 285);
-			this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button2->ForeColor = System::Drawing::Color::Black;
+			this->button2->Location = System::Drawing::Point(497, 290);
+			this->button2->Margin = System::Windows::Forms::Padding(2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(431, 36);
+			this->button2->Size = System::Drawing::Size(431, 42);
 			this->button2->TabIndex = 11;
 			this->button2->Text = L"Agregar";
 			this->button2->UseVisualStyleBackColor = false;
@@ -240,15 +240,15 @@ namespace proyectoZoo {
 			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
 			dataGridViewCellStyle2->BackColor = System::Drawing::Color::White;
 			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9));
-			dataGridViewCellStyle2->ForeColor = System::Drawing::Color::Black;
+			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
 			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
 			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
 			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
 			this->dataGridView1->DefaultCellStyle = dataGridViewCellStyle2;
 			this->dataGridView1->EnableHeadersVisualStyles = false;
 			this->dataGridView1->GridColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->dataGridView1->Location = System::Drawing::Point(31, 333);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataGridView1->Location = System::Drawing::Point(28, 381);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 60;
 			dataGridViewCellStyle3->ForeColor = System::Drawing::Color::Black;
@@ -314,8 +314,8 @@ namespace proyectoZoo {
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(514, 19);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox2->Location = System::Drawing::Point(54, 31);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(260, 81);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -339,7 +339,7 @@ namespace proyectoZoo {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"Usuarios";
 			this->Text = L"Usuarios";
 			this->Load += gcnew System::EventHandler(this, &Usuarios::Usuarios_Load);
@@ -363,6 +363,32 @@ namespace proyectoZoo {
 		String^ usuario = this->textBox1->Text;
 		String^ clave = this->textBox2->Text;
 		String^ cargo = this->comboBox1->Text;
+
+		// Validaciones
+		// Nombre: no vacío, solo letras y espacios
+		if (String::IsNullOrWhiteSpace(nombre)) {
+			MessageBox::Show("El nombre no puede estar vacío", L"Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+		for (int i = 0; i < nombre->Length; i++) {
+			wchar_t ch = nombre[i];
+			if (!System::Char::IsLetter(ch) && ch != ' ') {
+				MessageBox::Show("El nombre solo debe contener letras y espacios", L"Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				return;
+			}
+		}
+
+		// Cédula: exactamente 10 dígitos
+		if (String::IsNullOrEmpty(cedula) || cedula->Length != 10) {
+			MessageBox::Show("La cédula debe contener exactamente 10 dígitos", L"Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+		for (int i = 0; i < cedula->Length; i++) {
+			if (!System::Char::IsDigit(cedula[i])) {
+				MessageBox::Show("La cédula solo debe contener números", L"Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				return;
+			}
+		}
 
 		if (editingIndex == -1) {
 			Usuario^ u = gcnew Usuario(nombre, cedula, correo, edad, usuario, clave, cargo);
@@ -407,9 +433,9 @@ private: System::Void Usuarios_Load(System::Object^ sender, System::EventArgs^ e
 		this->dataGridView1->Columns->Add(btnDelete);
 
 		// datos quemados de ejemplo
-		userList->Add(gcnew Usuario(L"Alex Dubert", L"12345678", L"alex@example.com", L"23", L"alex", L"1234", L"Administrador"));
-		userList->Add(gcnew Usuario(L"Maria Lopez", L"87654321", L"maria@example.com", L"28", L"marial", L"abcd", L"Dueño"));
-		userList->Add(gcnew Usuario(L"Carlos Ruiz", L"11223344", L"carlos@example.com", L"45", L"carlosr", L"pass", L"Dueño"));
+		userList->Add(gcnew Usuario(L"Alex Dubert", L"1234567890", L"alex@example.com", L"23", L"alex", L"1234", L"Administrador"));
+		userList->Add(gcnew Usuario(L"Maria Lopez", L"8765432109", L"maria@example.com", L"28", L"marial", L"abcd", L"Dueño"));
+		userList->Add(gcnew Usuario(L"Carlos Ruiz", L"1122334455", L"carlos@example.com", L"45", L"carlosr", L"pass", L"Dueño"));
 
 		RefreshGrid();
 }
@@ -467,10 +493,10 @@ private: System::Void dataGridView1_CellContentClick(System::Object^ sender, Sys
 					row->Cells[0]->Value = u->Nombre;
 					row->Cells[1]->Value = u->Cedula;
 					row->Cells[2]->Value = u->Correo;
-				 row->Cells[3]->Value = u->Edad;
-				 row->Cells[4]->Value = u->UsuarioName;
-				 row->Cells[5]->Value = u->Clave;
-				 row->Cells[6]->Value = u->Cargo;
+			 	row->Cells[3]->Value = u->Edad;
+			 	row->Cells[4]->Value = u->UsuarioName;
+			 	row->Cells[5]->Value = u->Clave;
+			 	row->Cells[6]->Value = u->Cargo;
 				}
 			}
 		}

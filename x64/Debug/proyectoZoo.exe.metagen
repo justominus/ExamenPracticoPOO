@@ -1,4 +1,6 @@
   proyectoZoo.AgregarUsuarios.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.Animales.resources - Embedded, ContainedInManifestFile, 
+  proyectoZoo.BalanceGeneral.resources - Embedded, ContainedInManifestFile, 
   proyectoZoo.EliminarUsuario.resources - Embedded, ContainedInManifestFile, 
   proyectoZoo.Login.resources - Embedded, ContainedInManifestFile, 
   proyectoZoo.main.resources - Embedded, ContainedInManifestFile, 
@@ -25,9 +27,39 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class proyectoZoo.AgregarUsuarios: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.Animal: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Nombre : Public
+    System.String Identificacion : Public
+    System.String Especie : Public
+    System.String Sexo : Public
+    System.String Edad : Public
+Class proyectoZoo.AnimalsData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetAll(): PrivateScope, Public, Static, HideBySig
 Class proyectoZoo.Animales: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.Ingreso: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Description : Public
+    Double Value : Public
+Class proyectoZoo.Ingresos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetAll(): PrivateScope, Public, Static, HideBySig
+Class proyectoZoo.Egreso: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Description : Public
+    Double Value : Public
+Class proyectoZoo.Egresos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetAll(): PrivateScope, Public, Static, HideBySig
 Class proyectoZoo.BalanceGeneral: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -37,19 +69,6 @@ Class proyectoZoo.EliminarUsuario: AutoLayout, AnsiClass, Class, Public, BeforeF
 Class proyectoZoo.VerEmpleado: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class proyectoZoo.UIStyles: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Fields:
-    System.Drawing.Color WindowBack : Public, Static, InitOnly
-    System.Drawing.Color FormTextColor : Public, Static, InitOnly
-    System.Drawing.Color PanelBack : Public, Static, InitOnly
-    System.Drawing.Color PanelTextColor : Public, Static, InitOnly
-    System.Drawing.Color TextBoxBorder : Public, Static, InitOnly
-    System.Drawing.Color ButtonColor : Public, Static, InitOnly
-    System.Drawing.Color ButtonTextColor : Public, Static, InitOnly
-    System.Drawing.Color MenuActive : Public, Static, InitOnly
-  Methods:
-    ApplyGlobalStyles(Form): PrivateScope, Public, Static, HideBySig
 Class proyectoZoo.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -76,6 +95,19 @@ Class proyectoZoo.MenuDueño: AutoLayout, AnsiClass, Class, Public, BeforeFieldI
 Class proyectoZoo.MenuAdmin: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class proyectoZoo.UIStyles: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Color WindowBack : Public, Static, InitOnly
+    System.Drawing.Color FormTextColor : Public, Static, InitOnly
+    System.Drawing.Color PanelBack : Public, Static, InitOnly
+    System.Drawing.Color PanelTextColor : Public, Static, InitOnly
+    System.Drawing.Color TextBoxBorder : Public, Static, InitOnly
+    System.Drawing.Color ButtonColor : Public, Static, InitOnly
+    System.Drawing.Color ButtonTextColor : Public, Static, InitOnly
+    System.Drawing.Color MenuActive : Public, Static, InitOnly
+  Methods:
+    ApplyGlobalStyles(Form): PrivateScope, Public, Static, HideBySig
 Class proyectoZoo.MenuCajero: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

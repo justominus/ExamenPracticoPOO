@@ -20,3 +20,5 @@ C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.bole
 C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.Usuarios.resources
 C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.VerEmpleado.resources
 C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.vcxproj.GenerateResource.cache
+C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.BalanceGeneral.resources
+C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.Animales.resources

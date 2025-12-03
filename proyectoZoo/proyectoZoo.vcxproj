@@ -121,9 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AgregarUsuarios.cpp" />
+    <ClCompile Include="Animal.cpp" />
     <ClCompile Include="Animales.cpp" />
     <ClCompile Include="BalanceGeneral.cpp" />
+    <ClCompile Include="Egresos.cpp" />
     <ClCompile Include="EliminarUsuario.cpp" />
+    <ClCompile Include="Ingresos.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuAdmin.cpp" />
@@ -138,15 +141,18 @@
     <ClInclude Include="AgregarUsuarios.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Animal.h" />
     <ClInclude Include="Animales.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="BalanceGeneral.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Egresos.h" />
     <ClInclude Include="EliminarUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Ingresos.h" />
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -179,6 +185,12 @@
     <EmbeddedResource Include="AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Animales.resx">
+      <DependentUpon>Animales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalanceGeneral.resx">
+      <DependentUpon>BalanceGeneral.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.h</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +215,12 @@
     <EmbeddedResource Include="VerEmpleado.resx">
       <DependentUpon>VerEmpleado.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\php_elephant_icon_124889.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="php_elephant_icon_124889.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

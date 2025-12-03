@@ -24,6 +24,12 @@ namespace proyectoZoo {
         {
             if (form == nullptr) return;
 
+            // ensure form is not maximized
+            try {
+                form->WindowState = System::Windows::Forms::FormWindowState::Normal;
+            }
+            catch (...) {}
+
             form->BackColor = WindowBack;
             form->ForeColor = FormTextColor;
 

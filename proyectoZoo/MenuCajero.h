@@ -5,6 +5,8 @@
 
 namespace proyectoZoo {
 
+    ref class Login;
+
  using namespace System;
  using namespace System::ComponentModel;
  using namespace System::Collections;
@@ -18,7 +20,6 @@ namespace proyectoZoo {
  MenuCajero(void)
  {
  InitializeComponent();
- this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
  // apply styles
  UIStyles::ApplyGlobalStyles(this);
  }
@@ -32,6 +33,7 @@ namespace proyectoZoo {
  private:
  System::Windows::Forms::MenuStrip^ menuStrip1;
  System::Windows::Forms::ToolStripMenuItem^ boleteriaToolStripMenuItem;
+ System::Windows::Forms::ToolStripMenuItem^ cerrarSesionToolStripMenuItem;
  System::Windows::Forms::Panel^ panelContent;
  System::ComponentModel::Container ^components;
 
@@ -41,6 +43,7 @@ namespace proyectoZoo {
  this->components = (gcnew System::ComponentModel::Container());
  this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
  this->boleteriaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+ this->cerrarSesionToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
  this->panelContent = (gcnew System::Windows::Forms::Panel());
  this->menuStrip1->SuspendLayout();
  this->SuspendLayout();
@@ -48,7 +51,7 @@ namespace proyectoZoo {
  // menuStrip1
  // 
  this->menuStrip1->ImageScalingSize = System::Drawing::Size(24,24);
- this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^ >(1) { this->boleteriaToolStripMenuItem });
+ this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^ >(2) { this->boleteriaToolStripMenuItem, this->cerrarSesionToolStripMenuItem });
  this->menuStrip1->Location = System::Drawing::Point(0,0);
  this->menuStrip1->Name = L"menuStrip1";
  this->menuStrip1->Size = System::Drawing::Size(800,33);
@@ -61,6 +64,14 @@ namespace proyectoZoo {
  this->boleteriaToolStripMenuItem->Size = System::Drawing::Size(96,29);
  this->boleteriaToolStripMenuItem->Text = L"Boleteria";
  this->boleteriaToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuCajero::boleteriaToolStripMenuItem_Click);
+ // 
+ // cerrarSesionToolStripMenuItem
+ // 
+ this->cerrarSesionToolStripMenuItem->Name = L"cerrarSesionToolStripMenuItem";
+ this->cerrarSesionToolStripMenuItem->Size = System::Drawing::Size(106,29);
+ this->cerrarSesionToolStripMenuItem->Text = L"Cerrar sesión";
+ this->cerrarSesionToolStripMenuItem->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
+ this->cerrarSesionToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuCajero::cerrarSesionToolStripMenuItem_Click);
  // 
  // panelContent
  // 
@@ -94,6 +105,17 @@ namespace proyectoZoo {
  f->Dock = System::Windows::Forms::DockStyle::Fill;
  this->panelContent->Controls->Add(f);
  f->Show();
+ }
+
+ private: System::Void cerrarSesionToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	 this->Hide();
+	 System::Reflection::Assembly^ assemblyRef = System::Reflection::Assembly::GetExecutingAssembly();
+	 Object^ obj = assemblyRef->CreateInstance("proyectoZoo.Login");
+	 System::Windows::Forms::Form^ loginForm = dynamic_cast<System::Windows::Forms::Form^>(obj);
+	 if (loginForm != nullptr) {
+		 loginForm->ShowDialog();
+	 }
+	 this->Close();
  }
  };
 }

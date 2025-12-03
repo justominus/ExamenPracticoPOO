@@ -46,9 +46,10 @@ namespace proyectoZoo {
 
 	private: System::Windows::Forms::TextBox^ textUsuario;
 	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip1;
 	private: System::Windows::Forms::Panel^ panel1;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::ComponentModel::IContainer^ components;
 
 	internal:
@@ -75,21 +76,21 @@ namespace proyectoZoo {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textUsuario = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->labelError = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->panel1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::DeepSkyBlue;
+			this->button1->BackColor = System::Drawing::Color::DarkCyan;
 			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->button1->Location = System::Drawing::Point(29, 161);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(184, 54);
 			this->button1->TabIndex = 1;
@@ -101,7 +102,7 @@ namespace proyectoZoo {
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(388, 29);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(247, 81);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -127,9 +128,9 @@ namespace proyectoZoo {
 			this->textUsuario->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->textUsuario->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textUsuario->ForeColor = System::Drawing::Color::DeepSkyBlue;
+			this->textUsuario->ForeColor = System::Drawing::Color::DarkCyan;
 			this->textUsuario->Location = System::Drawing::Point(29, 47);
-			this->textUsuario->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textUsuario->Margin = System::Windows::Forms::Padding(2);
 			this->textUsuario->Name = L"textUsuario";
 			this->textUsuario->Size = System::Drawing::Size(185, 30);
 			this->textUsuario->TabIndex = 5;
@@ -141,24 +142,13 @@ namespace proyectoZoo {
 			this->textBox1->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->ForeColor = System::Drawing::Color::DeepSkyBlue;
+			this->textBox1->ForeColor = System::Drawing::Color::DarkCyan;
 			this->textBox1->Location = System::Drawing::Point(29, 94);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(185, 30);
 			this->textBox1->TabIndex = 6;
-			this->textBox1->Text = L"*******";
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-3, -1);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(350, 422);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 7;
-			this->pictureBox1->TabStop = false;
+			this->textBox1->UseSystemPasswordChar = true;
 			// 
 			// contextMenuStrip1
 			// 
@@ -174,7 +164,7 @@ namespace proyectoZoo {
 			this->panel1->Controls->Add(this->label1);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Location = System::Drawing::Point(381, 138);
-			this->panel1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->panel1->Margin = System::Windows::Forms::Padding(2);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(254, 253);
 			this->panel1->TabIndex = 8;
@@ -190,23 +180,34 @@ namespace proyectoZoo {
 			this->labelError->TabIndex = 9;
 			this->labelError->Visible = false;
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Location = System::Drawing::Point(-2, 0);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(332, 420);
+			this->pictureBox1->TabIndex = 9;
+			this->pictureBox1->TabStop = false;
+			// 
 			// Login
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->ClientSize = System::Drawing::Size(683, 416);
-			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->pictureBox1);
+			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->pictureBox2);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"Login";
 			this->Text = L"Login";
 			this->Load += gcnew System::EventHandler(this, &Login::Login_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
