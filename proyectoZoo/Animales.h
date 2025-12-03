@@ -59,6 +59,12 @@ namespace proyectoZoo {
     private: System::Windows::Forms::DataGridViewTextBoxColumn^ edad;
     private: System::Windows::Forms::DataGridViewButtonColumn^ colEditar;
     private: System::Windows::Forms::DataGridViewButtonColumn^ colEliminar;
+    private: System::DirectoryServices::DirectorySearcher^ directorySearcher1;
+    private: System::DirectoryServices::DirectorySearcher^ directorySearcher2;
+    private: System::Windows::Forms::TextBox^ textBox6;
+    private: System::Windows::Forms::PictureBox^ pictureBox1;
+
+
 
     private:
         /// <summary>
@@ -136,8 +142,13 @@ namespace proyectoZoo {
             this->especie = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
             this->sexo = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
             this->edad = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+            this->directorySearcher1 = (gcnew System::DirectoryServices::DirectorySearcher());
+            this->directorySearcher2 = (gcnew System::DirectoryServices::DirectorySearcher());
+            this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+            this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+            (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
             this->SuspendLayout();
             // 
             // textBox1
@@ -188,9 +199,9 @@ namespace proyectoZoo {
             // button1
             // 
             this->button1->BackColor = System::Drawing::Color::DarkCyan;
-            this->button1->Location = System::Drawing::Point(385, 189);
+            this->button1->Location = System::Drawing::Point(385, 179);
             this->button1->Name = L"button1";
-            this->button1->Size = System::Drawing::Size(216, 27);
+            this->button1->Size = System::Drawing::Size(215, 41);
             this->button1->TabIndex = 5;
             this->button1->Text = L"Agregar";
             this->button1->UseVisualStyleBackColor = false;
@@ -216,7 +227,7 @@ namespace proyectoZoo {
                     this->identificacion, this->especie, this->sexo, this->edad
             });
             this->dataGridView1->GridColor = System::Drawing::SystemColors::Control;
-            this->dataGridView1->Location = System::Drawing::Point(45, 247);
+            this->dataGridView1->Location = System::Drawing::Point(50, 294);
             this->dataGridView1->Name = L"dataGridView1";
             this->dataGridView1->RowHeadersWidth = 51;
             this->dataGridView1->RowTemplate->Height = 24;
@@ -258,12 +269,47 @@ namespace proyectoZoo {
             this->edad->Name = L"edad";
             this->edad->Width = 125;
             // 
+            // directorySearcher1
+            // 
+            this->directorySearcher1->ClientTimeout = System::TimeSpan::Parse(L"-00:00:01");
+            this->directorySearcher1->ServerPageTimeLimit = System::TimeSpan::Parse(L"-00:00:01");
+            this->directorySearcher1->ServerTimeLimit = System::TimeSpan::Parse(L"-00:00:01");
+            // 
+            // directorySearcher2
+            // 
+            this->directorySearcher2->ClientTimeout = System::TimeSpan::Parse(L"-00:00:01");
+            this->directorySearcher2->ServerPageTimeLimit = System::TimeSpan::Parse(L"-00:00:01");
+            this->directorySearcher2->ServerTimeLimit = System::TimeSpan::Parse(L"-00:00:01");
+            // 
+            // textBox6
+            // 
+            this->textBox6->BackColor = System::Drawing::SystemColors::Control;
+            this->textBox6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->textBox6->Location = System::Drawing::Point(50, 239);
+            this->textBox6->Name = L"textBox6";
+            this->textBox6->Size = System::Drawing::Size(701, 34);
+            this->textBox6->TabIndex = 18;
+            this->textBox6->Text = L"Busqueda";
+            // 
+            // pictureBox1
+            // 
+            this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
+            this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+            this->pictureBox1->Location = System::Drawing::Point(716, 239);
+            this->pictureBox1->Name = L"pictureBox1";
+            this->pictureBox1->Size = System::Drawing::Size(35, 34);
+            this->pictureBox1->TabIndex = 19;
+            this->pictureBox1->TabStop = false;
+            // 
             // Animales
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
             this->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-            this->ClientSize = System::Drawing::Size(817, 375);
+            this->ClientSize = System::Drawing::Size(817, 392);
+            this->Controls->Add(this->pictureBox1);
+            this->Controls->Add(this->textBox6);
             this->Controls->Add(this->dataGridView1);
             this->Controls->Add(this->pictureBox2);
             this->Controls->Add(this->button1);
@@ -276,6 +322,7 @@ namespace proyectoZoo {
             this->Text = L"Animales";
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+            (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
             this->ResumeLayout(false);
             this->PerformLayout();
 
@@ -341,5 +388,7 @@ namespace proyectoZoo {
              }
          }
     }
+private: System::Void textBox6_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

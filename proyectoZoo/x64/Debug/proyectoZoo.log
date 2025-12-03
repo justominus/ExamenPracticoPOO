@@ -1,3 +1,20 @@
-﻿  MenuDueño.cpp
+﻿  AgregarUsuarios.cpp
+  Animal.cpp
+  Animales.cpp
+  BalanceGeneral.cpp
+  Egresos.cpp
+  EliminarUsuario.cpp
+  Ingresos.cpp
+  Login.cpp
+  main.cpp
+  MenuAdmin.cpp
+  MenuDueño.cpp
+  boleteria.cpp
+  MyForm.cpp
+  Usuario.cpp
+  Usuarios.cpp
+  VerEmpleado.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generando código...
   AgregarUsuarios.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  proyectoZoo.vcxproj -> C:\Users\Alex\source\repos\POOExamenFinal\x64\Debug\proyectoZoo.exe
+  proyectoZoo.vcxproj -> C:\Users\Alex\source\repos\ExamenPracticoPOO2\x64\Debug\proyectoZoo.exe

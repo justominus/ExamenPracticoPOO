@@ -22,3 +22,16 @@ C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.VerE
 C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.vcxproj.GenerateResource.cache
 C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.BalanceGeneral.resources
 C:\Users\Alex\source\repos\POOExamenFinal\proyectoZoo\x64\Debug\proyectoZoo.Animales.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.vcxproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.AgregarUsuarios.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.Animales.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.BalanceGeneral.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.EliminarUsuario.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.Login.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.main.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.MenuAdmin.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.MenuDueño.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.boleteria.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.Usuarios.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.VerEmpleado.resources
+C:\Users\Alex\source\repos\ExamenPracticoPOO2\proyectoZoo\x64\Debug\proyectoZoo.vcxproj.GenerateResource.cache
