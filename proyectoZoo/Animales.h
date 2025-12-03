@@ -233,6 +233,7 @@ namespace proyectoZoo {
             this->dataGridView1->RowTemplate->Height = 24;
             this->dataGridView1->Size = System::Drawing::Size(701, 97);
             this->dataGridView1->TabIndex = 15;
+            this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Animales::dataGridView1_CellContentClick_1);
             // 
             // nombre
             // 
@@ -307,7 +308,7 @@ namespace proyectoZoo {
             this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
             this->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-            this->ClientSize = System::Drawing::Size(817, 392);
+            this->ClientSize = System::Drawing::Size(795, 407);
             this->Controls->Add(this->pictureBox1);
             this->Controls->Add(this->textBox6);
             this->Controls->Add(this->dataGridView1);
@@ -318,6 +319,7 @@ namespace proyectoZoo {
             this->Controls->Add(this->textBox3);
             this->Controls->Add(this->textBox2);
             this->Controls->Add(this->textBox1);
+            this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
             this->Name = L"Animales";
             this->Text = L"Animales";
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
@@ -389,6 +391,8 @@ namespace proyectoZoo {
          }
     }
 private: System::Void textBox6_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void dataGridView1_CellContentClick_1(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 }
 };
 }
